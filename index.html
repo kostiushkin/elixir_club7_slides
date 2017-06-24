@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>The Future of Computing</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,41 +10,193 @@
 <body class="shower list">
 
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>The Future of Computing</h1>
+		<p>What is the difference between imperative and declarative programming and where is it from?</p>
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<h2>The Future of Computing</h2>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>Serhii Kostiushkin</p>
+		<p>Elixir Club 7, Dnipro</p>
+		<p>24 June, 2017</p>
+        <!--
 		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+			<img class="cover" src="pictures/cover2.png">
 			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
 			</figcaption>
 		</figure>
+        -->
 		<style>
 			#cover h2 {
 				margin:30px 0 0;
-				color:#FFF;
+				color:#000;
 				text-align:center;
 				font-size:70px;
 				}
 			#cover p {
 				margin:10px 0 0;
 				text-align:center;
-				color:#FFF;
+				color:#000;
 				font-style:italic;
 				font-size:20px;
 				}
 				#cover p a {
 					color:#FFF;
-					}
+				}
 		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
+		<h2>The main goal of this speech</h2>
+        <p>Push Elixir developers to move further down the rabbit hole:</p>
+		<ul>
+            <li>Try to replace Elixir by Erlang</li>
+            <li>Continue to study functional languages</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Historical background of computing</h2>
+		<ul>
+			<li>The word "computer" was a job title assigned to people who used calculators</li>
+            <li>A basis of digital computing developed in 1854 (Boolean algebra)</li>
+			<li>The lambda calculus was described by Alonzo Church in 1936</li>
+			<li>The computer's principle was described by Alan Turing also in 1936, but later</li>
+			<li>The first fully automatic electromechanical computer assembled in 1941</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>FORTRAN vs Lisp</h2>
+		<ul>
+            <li>The first manual for FORTRAN appeared in October 1956, and compiler released in April 1957</li>
+            <li>The First Lisp compiler specified in 1958 and implemented a few years later. The first complete Lisp compiler, written in Lisp, was implemented in 1962.</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Benefits of using FORTRAN</h2>
+        <p>While the community was skeptical that FORTRAN could possibly outperform hand-coding, it reduced the number of programming statements necessary to operate a machine by a factor of 20, and quickly gained acceptance</p>
+        <p>Fortran is a general-purpose, imperative programming language</p>
+	</section>
+
+	<section class="slide">
+		<h2>Lisp and AI</h2>
+        <p>Lisp pioneered many ideas in computer science, including tree data structures, dynamic typing, conditionals, higher-order functions, recursion, the self-hosting compiler, and the read–eval–print loop</p>
+        <p>Many ideas were borrowed from IPL (Information Processing Language). It was the first assembly implemented AI language</p>
+        <p>Lisp quickly became the favored programming language for artificial intelligence (AI) researchers</p>
+	</section>
+
+	<section class="slide">
+		<h2>Imperative programming</h2>
+        <p>The hardware implementation of almost all computers is imperative. Nearly all computer hardware is designed to execute machine code, which is native to the computer, written in the imperative style. From this low-level perspective, the program state is defined by the contents of memory, and the statements are instructions in the native machine language of the computer</p>
+	</section>
+
+	<section class="slide">
+		<h2>Declarative programming</h2>
+        <p>Declarative programming is a programming paradigm — a style of building the structure and elements of computer programs — that expresses the logic of a computation without describing its control flow</p>
+	</section>
+
+	<section class="slide">
+		<h2>Once again about the difference between Imperative and Declarative programming</h2>
+        <ul>
+            <li>Imperative programming is when you have a limited amount of memory</li>
+            <li>Declarative programming is when you absolutely free</li>
+        </ul>
+	</section>
+
+	<section class="slide">
+		<h2>A new era, the era of the C</h2>
+        <p>By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in assembly language, including operating systems, as well as various application software for computers ranging from supercomputers to embedded systems</p>
+        <p>C is a general-purpose, imperative computer programming language</p>
+	</section>
+
+	<section class="slide">
+		<h2>After C</h2>
+		<ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>Perl</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>...</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Maybe imperative programming has some sense?</h2>
+        <p>No, and that's why:</p>
+        <ul>
+            <li>We think in another way</li>
+            <li>Low level languages like C is no longer translated into asm directly</li>
+        </ul>
+	</section>
+
+	<section class="slide">
+		<h2>Static single assignment form or SSA</h2>
+        <p>This is a way of structuring the intermediate representation so that every variable is assigned exactly once</p>
+	</section>
+
+	<section class="slide" id="picture">
+		<figure>
+			<img class="cover" src="pictures/ssa.png">
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>What's next?</h2>
+        <pre>
+            <code>fib(0) -> 0;</code>
+            <code>fib(1) -> 1;</code>
+            <code>fib(N) -> fib(N-1) + fib(N-2)</code>
+        </pre>
+	</section>
+
+	<section class="slide">
+		<h2>Runtime optimizations</h2>
+        <pre>
+            <code>1> [fib(0),fib(1),fib(2),fib(3),fib(4),fib(5),fib(6),fib(7)]</code>
+            <code>[0,1,1,2,3,5,8,13]</code>
+        </pre>
+	</section>
+
+	<section class="slide">
+		<h2>But it is expensive</h2>
+        <p>Optimizations in runtime is like a profiling in runtime</p>
+        <p>But is also like a deep learning</p>
+	</section>
+
+	<section class="slide">
+		<h2>AlphaGo</h2>
+        <p>On May 27, the computer finally defeated the strongest player in the world, the Chinese Ke Tze, having won three games out of three. As noted by DeepMind co-founder Demis Hassabis, this achievement is the pinnacle for AlphaGo</p>
+	</section>
+
+	<section class="slide">
+		<h2>Tensor processing unit (TPU)</h2>
+        <p>A tensor processing unit (TPU) is an application-specific integrated circuit (ASIC) developed by Google specifically for machine learning</p>
+	</section>
+
+	<section class="slide">
+		<h2>Human brain</h2>
+        <p>In a human, the cerebral cortex contains approximately 15–33 billion neurons</p>
+	</section>
+
+	<section class="slide">
+		<h2>In 10 years</h2>
+        <p>One recursive looped function per core</p>
+	</section>
+
+	<section class="slide">
+		<h2>Questions?</h2>
+	</section>
+
+<!--
+	<section class="slide">
+		<h2>Shower</h2>
 		<ol>
 			<li>Built on HTML, CSS and vanilla JavaScript</li>
 			<li>Works in all modern browsers</li>
@@ -191,7 +343,7 @@
 				}
 		</style>
 	</section>
-
+-->
 	<footer class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
 	</footer>
